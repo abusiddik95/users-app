@@ -7,7 +7,7 @@ import './User.css'
 const User = (props) => {
    const [users, setUsers] = useState([0,15]);
    useEffect(()=> {
-    fetch('http://www.json-generator.com/api/json/get/ceipaPDcVu?indent=2')
+    fetch('https://www.json-generator.com/api/json/get/ceipaPDcVu?indent=2')
     .then(response => response.json())
     .then(data => setUsers(data));
    },[])
